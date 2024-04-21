@@ -1,0 +1,17 @@
+.navbar {
+  border-bottom: 2px solid #cbd6e2;
+}
+
+input[type="text"] {
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: #f9f9f9;
+  width: 300px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(203, 214, 226, 0.5);
+}

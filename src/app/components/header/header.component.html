@@ -1,0 +1,6 @@
+<nav class="navbar navbar-light bg-light">
+     <div class="container-fluid justify-content-center">
+          <a class="navbar-brand fw-bold" [routerLink]="['/users']"><i class="fa-solid fa-users-line"></i>USERS</a>
+          <input type="text" [(ngModel)]="searchTerm" (input)="handleInput()" placeholder="Search by ID">
+     </div>
+</nav>

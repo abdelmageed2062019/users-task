@@ -1,0 +1,13 @@
+<div class="container my-5 d-flex justify-content-center align-items-center gap-2">
+
+     <button (click)="onPageChange(currentPage - 1)" [disabled]="currentPage === 1" class="bg-transparent border-0">
+          <i class="fa-solid fa-circle-chevron-left fa-xl"></i>
+     </button>
+
+     <span>Page {{ currentPage }} of {{ totalPages }}</span>
+
+     <button (click)="onPageChange(currentPage + 1)" [disabled]="currentPage === totalPages" class="bg-transparent border-0">
+          <i class="fa-solid fa-circle-chevron-right fa-xl"></i>
+     </button>
+
+</div>

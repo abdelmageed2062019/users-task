@@ -1,0 +1,15 @@
+.user-card {
+  border: 1px solid #cbd6e2;
+  transition: all ease 0.6s;
+  cursor: pointer;
+}
+
+.user-card:hover {
+  box-shadow: 0 0 10px #05050568;
+}
+
+.user-card img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}

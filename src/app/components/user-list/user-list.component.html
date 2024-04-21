@@ -1,0 +1,17 @@
+<div class="position-fixed top-0 bottom-0 start-0 end-0 bg-white d-flex justify-content-center align-items-center z-3" *ngIf="isLoading">
+     <img src="assets/loading.gif" alt="loading" width="40px" />
+</div>
+
+<div class="row d-flex">
+     <div class="row d-flex">
+          <div class="col-lg-4 col-md-6 g-3 d-flex flex-column justify-content-between" *ngFor="let user of usersList">
+               <div [routerLink]="['/users', user.id]" class="user-card text-center p-4">
+                    <img [src]="user.avatar" class="rounded-circle img-fluid" alt="user">
+                    <h5 class="card-title">{{user.first_name}} {{user.last_name}}</h5>
+               </div>
+          </div>
+     </div>
+
+     <app-pagination [currentPage]="currentPage" [pageSize]="pageSize" [totalItems]="totalUsers" (pageChange)="onPageChange($event)">
+     </app-pagination>
+</div>
